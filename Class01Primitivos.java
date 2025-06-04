@@ -41,7 +41,7 @@ public class Class01Primitivos {
         //GUARDAR UN PRIMITIVO EN STRING
         // int numero = 15;
         // String texto2 = String.valueOf(numero);
-        System.out.println("asdfasdf");
+        
         System.out.println("Fin de programa");
 
     }

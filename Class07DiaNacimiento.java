@@ -71,9 +71,11 @@ public class Class07DiaNacimiento {
             diaSemana = "Jueves";
         }else if (op7 == 6){
             diaSemana = "Viernes";
+        }else {
+            diaSemana = "Hemos pinchado ..";
         }
 
-        System.out.println("El día de la nacimiento es : " + diaSemana);
+        System.out.println("El día de la semana es : " + diaSemana);
 
         System.out.println("Fin de Programa");
     }

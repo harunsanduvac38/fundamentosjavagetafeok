@@ -21,27 +21,35 @@ public class Class06MayorTresNumeros {
         dato = teclado.nextLine();
         int numero3 = Integer.parseInt(dato);
 
-        if(numero1 > numero2 && numero1 > numero3){
+        if(numero1 >= numero2 && numero1 >= numero3){
             mayor = numero1;
             if(numero2 > numero3){
                 menor = numero3;
                 intermedio = numero2;
+            }else{
+                menor = numero2;
+                intermedio = numero3;
             }
-        }else if(numero2 > numero1 && numero2 > numero3){
+        }else if(numero2 >= numero1 && numero2 >= numero3){
             mayor = numero2;
             if(numero1 > numero3){
                 menor = numero3;
                 intermedio = numero1;
+            }else {
+                menor = numero1;
+                intermedio = numero3;
             }
         }else {
             mayor = numero3;
             if(numero1 > numero2){
                 menor = numero2;
                 intermedio = numero1;
+            }else{
+                menor = numero1;
+                intermedio = numero2;
             }
         }
 
         System.out.println(" El mayor es : " + mayor + "\n" + " El menor es : " + menor + "\n" + " El intermedio es : " + intermedio);
-    }
-    
+    }   
 }

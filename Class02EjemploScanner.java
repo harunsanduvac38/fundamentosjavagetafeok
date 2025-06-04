@@ -7,7 +7,7 @@ public class Class02EjemploScanner {
         System.out.println("Cual es tu nombre :");
         String nombre = teclado.nextLine();
 
-        System.out.println("sdfsadf");
+        
         System.out.println("Cuantos años tienes :");
         int edad = teclado.nextInt();
 

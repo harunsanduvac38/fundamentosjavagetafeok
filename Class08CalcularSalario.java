@@ -28,7 +28,7 @@ public class Class08CalcularSalario {
         int salarioExtra = 0;
         int salarioBruto = 0;
         float iva = 0;
-        double salarioTotal = 0;
+        float salarioTotal = 0;
         String destino = "";
         String retencion = "";
 
@@ -73,8 +73,8 @@ public class Class08CalcularSalario {
         System.out.println("      Salario Base:         " + salarioBase);
         System.out.println("      Salario Horas Extra:  " + salarioExtra);
         System.out.println("      Salario Bruto:        " + salarioBruto);
-        System.out.println("      IVA(%16):             " + Math.round(iva));
-        System.out.println("      -------------------------------" + "\n" + "      Salario Total:        " + Math.round(salarioTotal));
+        System.out.println("      IVA(%16):             " + iva);
+        System.out.println("      -------------------------------" + "\n" + "      Salario Total:        " + salarioTotal);
         System.out.println("      -------------------------------" + "\n" + "      FIN DE PROGRAMA" + "\n");
 
     }

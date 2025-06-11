@@ -6,21 +6,24 @@ public class Class25MetodoPositivoNegativo {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduzca un número:");
         String dato = teclado.nextLine();
+        int numero = Integer.parseInt(dato);
         
-        String result = comprobarNumero(dato);
+        String result = comprobarNumero(numero);
         System.out.println(result);
 
     }
 
-    public static String comprobarNumero(String dato){
+    public static String comprobarNumero(int numero){
 
-        if(Integer.parseInt(dato) > 0){
-            return "Número es POSITIVO";
-        }else if(Integer.parseInt(dato) < 0){
-            return "Número es NEGATIVO";
+        String respuesta;
+        if(numero > 0){
+            respuesta = "Número es POSITIVO";
+        }else if(numero < 0){
+            respuesta = "Número es NEGATIVO";
         }else {
-            return"Número es CERO";
+            respuesta = "Número es CERO";
         }
+        return respuesta;
     }
     
 }
